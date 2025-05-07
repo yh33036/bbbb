@@ -1,5 +1,4 @@
 import streamlit as st
-import openai
 from PyPDF2 import PdfReader
 st.title("PDF 챗봇")
 api_key = st.text_input("OpenAI API Key", type="password")
