@@ -1,5 +1,4 @@
 import streamlit as st
-import openai
 st.title("GPT Chat")
 api_key = st.text_input("OpenAI API Key", type="password")
 if api_key:
