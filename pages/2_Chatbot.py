@@ -1,5 +1,4 @@
 import streamlit as st
-import openai
 from rules import LIBRARY_RULES
 st.title("부경대 도서관 챗봇")
 api_key = st.text_input("OpenAI API Key", type="password")
