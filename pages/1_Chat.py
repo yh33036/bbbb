@@ -1,13 +1,13 @@
 import streamlit as st
 import openai
-st.title("💬 GPT Chat")
+st.title("GPT Chat")
 api_key = st.text_input("OpenAI API Key", type="password")
 if api_key:
     st.session_state["api_key"] = api_key
 if "messages" not in st.session_state:
     st.session_state.messages = []
 user_input = st.text_input("메시지를 입력하세요")
-if user_input:
+if user_input and "api_key" in st.session_state:
     st.session_state.messages.append({"role": "user", "content": user_input})
     client = openai.OpenAI(api_key=st.session_state["api_key"])
     response = client.chat.completions.create(
