@@ -1,5 +1,0 @@
-streamlit
-openai
-langchain
-PyPDF2
-tiktoken
