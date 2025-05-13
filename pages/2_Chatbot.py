@@ -1,5 +1,4 @@
 import streamlit as st
-import openai
 
 st.title("📚 부경대학교 도서관 챗봇")
 
