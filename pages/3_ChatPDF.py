@@ -1,5 +1,4 @@
 import streamlit as st
-import openai
 import PyPDF2
 
 st.title("📄 PDF 기반 챗봇")
